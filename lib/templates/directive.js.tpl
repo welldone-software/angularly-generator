@@ -12,7 +12,7 @@
       },
       //link: function(scope, el, atts, ctrls) {}
       controllerAs: 'vm',
-      controller: Ctrl,
+      controller: Ctrl
     };
 
 
