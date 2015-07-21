@@ -4,15 +4,11 @@
 
   var module = angular.module('<%= data.module %>');
 
-  module.config(function($stateProvider <% if(!data.minimum) { %>, $urlRouterProvider, $locationProvider<% } %>){
+  module.config(function($stateProvider , $urlRouterProvider, $locationProvider){
 
-        <% if(!data.minimum) { %>
+    $locationProvider.hashPrefix('!');
 
-        $locationProvider.hashPrefix('!');
-
-        $urlRouterProvider.otherwise('/');
-
-        <% } %>
+    $urlRouterProvider.otherwise('/');
 
   });
 
