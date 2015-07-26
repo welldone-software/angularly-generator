@@ -11,6 +11,7 @@
   "author": "dani@welldone-softwar.com",
   "license": "MIT",
   "dependencies": {
+    "event-stream": "^3.3.1",
     "gulp": "^3.9.0",
     "gulp-add-src": "^0.2.0",
     "gulp-changed": "^1.2.1",
