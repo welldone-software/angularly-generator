@@ -2,7 +2,7 @@
 
   'use strict';
 
-  angular.module('<%= data.module %>').controller('<%= _.capitalize(data.name) %>Ctrl', Ctrl);
+  angular.module('<%= data.module %>').controller('<%= _.capitalize(_.camelCase(data.name)) %>Ctrl', Ctrl);
 
   function Ctrl(){
     var vm = this;
