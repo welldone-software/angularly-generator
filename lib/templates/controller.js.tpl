@@ -2,9 +2,9 @@
 
   'use strict';
 
-  angular.module('<%= data.module %>').controller('<%= _.capitalize(_.camelCase(data.name)) %>Ctrl', Ctrl);
+  angular.module('<%= data.module %>').controller('<%= ex.angularlyName(data.module, data.name) %>Ctrl', ctrl);
 
-  function Ctrl(){
+  function ctrl(){
     var vm = this;
     vm.type = 'controller';
   }

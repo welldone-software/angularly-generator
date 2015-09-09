@@ -2,9 +2,9 @@
 
   'use strict';
 
-  angular.module('<%= data.module %>').factory('<%= _.capitalize(data.name) %>Svc', Factory);
+  angular.module('<%= data.module %>').factory('<%= ex.angularlyName(data.module, data.name) %>Svc', factory);
 
-  function Factory(){
+  function factory(){
     return {
 
     };

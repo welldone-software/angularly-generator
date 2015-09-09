@@ -2,7 +2,7 @@
 
   'use strict';
 
-  angular.module('<%= data.module %>').directive('<%= data.name %>', function(){
+  angular.module('<%= data.module %>').directive('<%= ex.angularlyName(data.module, data.name) %>', function(){
 
     return {
       restrict: 'E',
@@ -16,6 +16,7 @@
     };
 
 
+    // @ngInject
     function Ctrl(){
       var vm = this;
       vm.type = 'directive';
