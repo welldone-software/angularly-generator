@@ -7,20 +7,25 @@
     return {
       restrict: 'E',
       scope: {
-        arg: '=',
-        callback: '&'
-      },
-      //link: function(scope, el, atts, ctrls) {}
+        //arg: '=',
+        //callback: '&'
+      }
+      templateUrl: 'modules/<%= data.module %>/views/<%= data.name %>.html',
       controllerAs: 'vm',
-      controller: Ctrl
+      controller: ctrl,
+      //link: link
     };
 
 
     // @ngInject
-    function Ctrl(){
+    function ctrl($scope){
       var vm = this;
       vm.type = 'directive';
     }
+
+
+    //function link(scope, el, atts, ctrls) {
+    //}
 
   });
 
